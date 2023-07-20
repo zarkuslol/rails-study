@@ -1,3 +1,11 @@
-<h1 class="text-center">
-    Olá, mundo
-</h1>
+<div class="d-flex align-itens-center justify-center">
+    <h1 class="text-center">
+        Olá, mundo
+    </h1>
+
+    <% if @user %>
+        Logged in as <%= @user.email %>
+    <% end %>
+
+    <p>Not have an account yet? <a href="/signup">Create now!</a></p>
+</div>
